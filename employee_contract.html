@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Employee Contract</title>
+    <link rel="stylesheet" href="legalforms.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form: Employee Contract</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="employeeName">Employee's Name:</label>
+            <input type="text" name="employeeName" id="employeeName" required>
+
+            <label for="employeeAddress">Employee's Address:</label>
+            <input type="text" name="employeeAddress" id="employeeAddress" required>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" name="jobTitle" id="jobTitle" required>
+
+            <label for="startDate">Start Date:</label>
+            <input type="date" name="startDate" id="startDate" required>
+
+            <label for="salary">Salary:</label>
+            <input type="text" name="salary" id="salary" required>
+
+            <label for="responsibilities">Job Responsibilities:</label>
+            <textarea name="responsibilities" id="responsibilities" rows="8" required></textarea>
+
+            <button type="submit" onclick="window.print()">Print Employee Contract</button>
+        </form>
+    </main>
+
+    <button onclick="history.go(-1);">Back to Legal Forms</button>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Agreement Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Legal Command Center</h1>
+    </header>
+
+    <form action="#" method="post">
+
+        <h2>Rental Agreement</h2>
+
+        <label for="landlordName">Landlord's Name:</label>
+        <input type="text" name="landlordName" id="landlordName" required>
+
+        <label for="landlordAddress">Landlord's Address:</label>
+        <input type="text" name="landlordAddress" id="landlordAddress" required>
+
+        <label for="tenantName">Tenant's Name:</label>
+        <input type="text" name="tenantName" id="tenantName" required>
+
+        <label for="tenantAddress">Tenant's Address:</label>
+        <input type="text" name="tenantAddress" id="tenantAddress" required>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" id="startDate" required>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" id="endDate" required>
+
+        <label for="rentAmount">Monthly Rent Amount:</label>
+        <input type="number" name="rentAmount" id="rentAmount" required>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="number" name="dueDate" id="dueDate" required>
+
+        <button type="submit" onclick="window.print()">Print Form</button>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

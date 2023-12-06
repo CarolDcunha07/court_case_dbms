@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Loan Agreement</title>
+    <link rel="stylesheet" href="legalforms.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form: Loan Agreement</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="lenderName">Lender's Name:</label>
+            <input type="text" name="lenderName" id="lenderName" required>
+
+            <label for="lenderAddress">Lender's Address:</label>
+            <input type="text" name="lenderAddress" id="lenderAddress" required>
+
+            <label for="borrowerName">Borrower's Name:</label>
+            <input type="text" name="borrowerName" id="borrowerName" required>
+
+            <label for="borrowerAddress">Borrower's Address:</label>
+            <input type="text" name="borrowerAddress" id="borrowerAddress" required>
+
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="text" name="loanAmount" id="loanAmount" required>
+
+            <label for="repaymentTerms">Repayment Terms:</label>
+            <textarea name="repaymentTerms" id="repaymentTerms" rows="8" required></textarea>
+
+            <button type="submit" onclick="window.print()">Print Loan Agreement</button>
+        </form>
+    </main>
+
+    <button onclick="history.go(-1);">Back to Legal Forms</button>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

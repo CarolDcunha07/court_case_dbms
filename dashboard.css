@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') center/cover no-repeat;
+}
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type=text] {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    height: 350px;
+    width: 300px;
+    text-align: center;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 150px; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.card-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.card-link i {
+    margin-right: 5px;
+}

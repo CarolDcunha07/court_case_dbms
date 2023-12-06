@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Will</title>
+    <link rel="stylesheet" href="legalforms.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form: Will</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="testatorName">Testator's Name:</label>
+            <input type="text" name="testatorName" id="testatorName" required>
+
+            <label for="testatorAddress">Testator's Address:</label>
+            <input type="text" name="testatorAddress" id="testatorAddress" required>
+
+            <label for="beneficiary">Beneficiary's Name:</label>
+            <input type="text" name="beneficiary" id="beneficiary" required>
+
+            <label for="assets">List of Assets:</label>
+            <textarea name="assets" id="assets" rows="8" required></textarea>
+
+            <label for="executor">Executor's Name:</label>
+            <input type="text" name="executor" id="executor" required>
+
+            <label for="witness1">Witness 1:</label>
+            <input type="text" name="witness1" id="witness1" required>
+
+            <label for="witness2">Witness 2:</label>
+            <input type="text" name="witness2" id="witness2" required>
+
+            <button type="submit" onclick="window.print()">Print Will</button>
+        </form>
+    </main>
+
+    <button onclick="history.go(-1);">Back to Legal Forms</button>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

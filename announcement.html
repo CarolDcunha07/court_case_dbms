@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="announcement.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .announcement-item {
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .contact-info {
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .announcement-item:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        #backButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #backButton:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Important Announcement!</h1>
+    </header>
+
+    <main>
+        <div class="announcement-item">
+            <h2>Latest Announcement</h2>
+            <h3>Changes in Trial Schedule</h3>
+            <p><strong>Date and Time:</strong> <span id="datetime"></span></p>
+            <p><strong>Time Remaining:</strong> <span id="countdown"></span></p>
+            <p><strong>Summary:</strong> The court announces changes in the trial schedule. Please be informed that the trial for case number MC2023/03 will be rescheduled due to unforeseen circumstances.</p>
+            <p><strong>Details:</strong> All parties involved in case MC2023/03 are requested to take note of this change and make the necessary arrangements. We apologize for any inconvenience caused and appreciate your understanding in this matter.</p>
+        </div>
+
+        <div class="announcement-item">
+            <h2>New Court Procedures</h2>
+            <p>As of 04/12/2023, the Mangalore Courts have implemented new procedures to enhance the efficiency of legal processes. These procedures aim to streamline court activities and improve the overall experience for litigants, attorneys, and other stakeholders.</p>
+            <p>Key changes include Farmer's Act 2023. We appreciate your cooperation in adapting to these procedures, and if you have any questions, feel free to contact us.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need further information, please contact:
+                <br>
+                <strong>Email:</strong> info@mangalorecourts.com
+                <br>
+                <strong>Phone:</strong> (555) 123-4567
+            </p>
+        </div>
+
+        <!-- Back button to dashboard -->
+        <button id="backButton" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 JusticeHub: Empowering Legal Insight in Mangalore Courts. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function updateDateTime() {
+            const currentDateTime = new Date();
+            document.getElementById('datetime').textContent = currentDateTime.toLocaleString();
+
+            const nextTrialTime = new Date(currentDateTime);
+            nextTrialTime.setHours(currentDateTime.getHours() + 1);
+
+            const timeRemaining = nextTrialTime - currentDateTime;
+            const secondsRemaining = Math.floor(timeRemaining / 1000);
+
+            const hours = String(Math.floor(secondsRemaining / 3600)).padStart(2, '0');
+            const minutes = String(Math.floor((secondsRemaining % 3600) / 60)).padStart(2, '0');
+            const seconds = String(secondsRemaining % 60).padStart(2, '0');
+
+            document.getElementById('countdown').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        updateDateTime();
+
+        setInterval(updateDateTime, 1000);
+    </script>
+
+</body>
+
+</html>

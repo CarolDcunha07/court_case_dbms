@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power of Attorney Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Legal Command Center</h1>
+    </header>
+
+    <form action="#" method="post">
+
+        <h2>Power of Attorney</h2>
+
+        <label for="yourName">Your Name:</label>
+        <input type="text" name="yourName" id="yourName" required>
+
+        <label for="yourAddress">Your Address:</label>
+        <input type="text" name="yourAddress" id="yourAddress" required>
+
+        <label for="attorneyName">Attorney's Name:</label>
+        <input type="text" name="attorneyName" id="attorneyName" required>
+
+        <label for="attorneyAddress">Attorney's Address:</label>
+        <input type="text" name="attorneyAddress" id="attorneyAddress" required>
+
+        <label for="effectiveDate">Effective Date:</label>
+        <input type="date" name="effectiveDate" id="effectiveDate" required>
+
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="date" name="expirationDate" id="expirationDate">
+
+        <button type="submit" onclick="window.print()">Print Form</button>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

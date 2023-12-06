@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3: Affidavit</title>
+    <link rel="stylesheet" href="legalforms.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form 3: Affidavit</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="yourName">Your Name:</label>
+            <input type="text" name="yourName" id="yourName" required>
+
+            <label for="yourAddress">Your Address:</label>
+            <input type="text" name="yourAddress" id="yourAddress" required>
+
+            <label for="affiantRole">Your Role in the Affidavit (e.g., Deponent, Affiant):</label>
+            <input type="text" name="affiantRole" id="affiantRole" required>
+
+            <label for="swornDate">Sworn Date:</label>
+            <input type="date" name="swornDate" id="swornDate" required>
+
+            <label for="affidavitText">Affidavit Text:</label>
+            <textarea name="affidavitText" id="affidavitText" rows="8" required></textarea>
+
+            <label for="notaryName">Notary's Name (if applicable):</label>
+            <input type="text" name="notaryName" id="notaryName">
+
+            <label for="notaryAddress">Notary's Address (if applicable):</label>
+            <input type="text" name="notaryAddress" id="notaryAddress">
+
+            <button type="submit" onclick="window.print()">Print Affidavit</button>
+        </form>
+    </main>
+
+    <button onclick="history.go(-1);">Back to Legal Forms</button>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

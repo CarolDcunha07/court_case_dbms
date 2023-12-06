@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Command Center</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #backButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #backButton:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="card">
+            <img src="recentactivity.jpg" alt="Announcements" class="card-image">
+            <h2>Announcements</h2>
+            <p>Overview of Important Announcements.</p>
+            <a href="announcement.html" class="card-link"><i class="fas fa-arrow-right"></i> View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="caseexplorer.jpg" alt="Case Explorer" class="card-image">
+            <h2>Case Explorer</h2>
+            <p>View all cases and dive into detailed case profiles.</p>
+            <a href="casemanagement.php" class="card-link"><i class="fas fa-arrow-right"></i> Explore Cases</a>
+        </div>
+
+        <div class="card">
+            <img src="hearing.jpg" alt="Hearing Schedule" class="card-image">
+            <h2>Hearing Schedule</h2>
+            <p>Upcoming hearings at a glance with calendar view.</p>
+            <a href="hearing.php" class="card-link"><i class="fas fa-arrow-right"></i> View Schedule</a>
+        </div>
+
+        <div class="card">
+            <img src="legalresearch.jpg" alt="Legal Research" class="card-image">
+            <h2>Legal Research</h2>
+            <p>Access legal databases and conduct research efficiently.</p>
+            <a href="legalresearch.php" class="card-link"><i class="fas fa-arrow-right"></i> Start Research</a>
+        </div>
+
+        <div class="card">
+            <img src="legalforms.jpg" alt="Legal Forms" class="card-image">
+            <h2>Legal Forms</h2>
+            <p>Download commonly used legal forms for various purposes.</p>
+            <a href="legalforms.php" class="card-link"><i class="fas fa-arrow-right"></i> Explore Forms</a>
+        </div>
+
+        
+    </div>
+
+    <button id="backButton" onclick="window.location.href='login.php'">Back to Login</button>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Delete Case</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Delete Case</h1>
+    </header>
+
+    <div id="deleteCaseForm">
+        <form action="delete_case.php" method="GET">
+            <label for="caseNumber">Enter Case Number:</label>
+            <input type="text" id="caseNumber" name="case_number" required>
+            <button type="submit">Delete Case</button>
+        </form>
+    </div>
+
+    <button id="backButton" onclick="window.location.href='admin_dashboard.php'">Back to Admin Dashboard</button>
+
+    <footer>
+        <p>&copy; 2023 JusticeHub: Empowering Legal Insight in Mangalore Courts. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

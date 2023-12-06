@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#caseManagementBox {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#caseManagement {
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+#filterOptions {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#closeButton {
+  background-color: green;
+  color: white;
+}

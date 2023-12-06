@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Divorce Petition</title>
+    <link rel="stylesheet" href="legalforms.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Form: Divorce Petition</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="petitionerName">Petitioner's Name:</label>
+            <input type="text" name="petitionerName" id="petitionerName" required>
+
+            <label for="petitionerAddress">Petitioner's Address:</label>
+            <input type="text" name="petitionerAddress" id="petitionerAddress" required>
+
+            <label for="respondentName">Respondent's Name:</label>
+            <input type="text" name="respondentName" id="respondentName" required>
+
+            <label for="respondentAddress">Respondent's Address:</label>
+            <input type="text" name="respondentAddress" id="respondentAddress" required>
+
+            <label for="groundsForDivorce">Grounds for Divorce:</label>
+            <textarea name="groundsForDivorce" id="groundsForDivorce" rows="8" required></textarea>
+
+            <label for="reliefSought">Relief Sought:</label>
+            <textarea name="reliefSought" id="reliefSought" rows="8" required></textarea>
+
+            <button type="submit" onclick="window.print()">Print Divorce Petition</button>
+        </form>
+    </main>
+
+    <button onclick="history.go(-1);">Back to Legal Forms</button>
+
+    <footer>
+        <p>&copy; 2023 Legal Command Center. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

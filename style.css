@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px 9px #FFF8E1;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 720px; 
+}
+
+.button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+  color: #555;
+  transition: 0.3s;
+}
+
+#btn {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #C19A7F, #A98064);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+#btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: #fff;
+  border-radius: 15px;
+}
+
+#btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.social-icons {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input-group {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  text-align: center; 
+}
+
+.input-field {
+  width: 80%; 
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  transition: 0.3s;
+  color: #555;
+  display: inline-block; 
+}
+
+.input-field:focus {
+  border-color: #A98064;
+}
+
+.submit-btn {
+  width: 80%; 
+  padding: 12px;
+  cursor: pointer;
+  background: linear-gradient(to right, #C19A7F, #A98064);
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+  display: inline-block; 
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #A98064, #C19A7F);
+}
+
+.check-box {
+  margin: 10px 5px;
+}
+
+span {
+  color: #777;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#login {
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+
+

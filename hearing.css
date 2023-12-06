@@ -1,0 +1,54 @@
+h2 {
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#upcomingHearings {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+#closeModalButton {
+    background-color: #4CAF50; 
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 20px; 
+}
+
+#closeModalButton:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
