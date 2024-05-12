@@ -116,10 +116,7 @@ $generatedCaseNumber = generateCaseNumber($conn);
     <script>
         $(document).ready(function () {
             $("#addButton").click(function () {
-                // Serialize form data
                 var formData = $("#caseForm").serialize();
-
-                // AJAX request
                 $.ajax({
                     type: "POST",
                     url: "process_new_case.php",
